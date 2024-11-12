@@ -1,0 +1,27 @@
+{
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+  "singleQuote": true,
+  "trailingComma": "none",
+  "jsxSingleQuote": true,
+  "bracketSameLine": false,
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
+  "importOrder": [
+    "^react$",
+    "^react-dom.*",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^(@app|@components|@config|@ecs|@helpers|@hooks|@physics|@state|@systems|@helpers).*",
+    "^[.]"
+  ],
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "decorators-legacy"
+  ],
+  "importOrderTypeScriptVersion": "5.6.3",
+  "importOrderCaseSensitive": true
+}
